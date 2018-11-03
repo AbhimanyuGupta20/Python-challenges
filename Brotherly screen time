@@ -1,0 +1,9 @@
+#brotherly screen time
+
+from time import sleep
+
+howmany=int(input('How many sessions do you want to play'))
+
+for i in range(howmany):
+    print('Time for brother A to play');sleep(5)
+    print('Time for brother B to play');sleep(5)
