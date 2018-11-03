@@ -1,0 +1,22 @@
+#ISBN calculator
+a=int(input('Enter the number you want to calculate the check digit for'))
+a=str(a)
+sumodd=0
+sumeven=0
+
+for i in a:
+    if i%2==0:
+        sumeven+=i
+    if i%2!=0:
+        sumodd+=1
+
+threetimes=3*sumeven
+inter=(sumodd+sumeven)/100
+if inter%2==0:
+    checkdigit=sumodd+sumeven//10
+
+if inter%2!=0:
+    checkdigit=10-(sumodd+sumeven%10)
+
+print(checkdigit)
+
