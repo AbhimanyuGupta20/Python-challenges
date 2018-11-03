@@ -1,0 +1,5 @@
+#99 bottles of coke
+bottles=99
+while bottles>0:
+    print('%d bottles of coke on the wall,%d bottles of coke, take one down, pass it around' % (bottles,bottles))
+    bottles-=1
