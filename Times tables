@@ -1,0 +1,5 @@
+#Times Tables
+a=int(input('Which times table do you want?'))
+
+for i in range(12):
+    print(a*i)
