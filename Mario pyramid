@@ -1,0 +1,10 @@
+#Mario pyramid
+s=10
+
+rows=int(input('how many rows?'))
+realrows=rows/2
+
+
+for i in range(1,rows*2,2):
+    print(' '*s+i*'*')
+    s=s-1
