@@ -1,0 +1,13 @@
+#Vending machine
+print('welcome to the vending machine!! Would you like the cola,orange juice,or fanta? Each item costs $3. Please insert coins')
+product=input('select item. cola,orange juice or fanta?')
+amount=int(input('how much money have you inserted?'))
+if product
+if amount==3:
+    print('here is your'+product)
+elif amount<3:
+    print('this is not enough! Take your money back and insert $3!')
+elif amount>3:
+    change=amount-3
+    print('here is your'+product)
+    print('here is your change of %d'%change)
