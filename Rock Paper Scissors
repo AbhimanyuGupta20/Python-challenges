@@ -1,0 +1,31 @@
+#Rock Paper Scissors
+import random
+
+plays=['R','P','S']
+complay=random.choice(plays)
+
+you=raw_input('What do you want to play. R,P or S?')
+
+if complay=='R':
+    if you=='R':
+        print('Draw!')
+    if you=='P':
+        print('You win!')
+    if you=='S':
+        print('You lose!')
+
+if complay=='P':
+    if you=='R':
+        print('you lose!')
+    if you=='P':
+        print('Draw!')
+    if you=='S':
+        print('You win!')
+
+if complay=='S':
+    if you=='R':
+        print('you win!')
+    if you=='P':
+        print('You lose!')
+    if you=='S':
+        print('Draw!')
