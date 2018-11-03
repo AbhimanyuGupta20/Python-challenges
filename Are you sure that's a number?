@@ -1,0 +1,6 @@
+#Are you sure thats a number?
+a=input('Input a number')
+if isinstance(a,float)==True:
+    print('Yes it is')
+else:
+    print('Error')
