@@ -1,0 +1,4 @@
+#12 to 24 hour clock
+def convertto24(time):
+    return time[:-2] if time[-2:] == "AM" else str(int(time[:2]) + 12) + time[2:8]
+print(convertto24("07:05:45PM"))
