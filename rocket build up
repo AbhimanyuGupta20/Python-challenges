@@ -1,0 +1,5 @@
+#Rocket build up
+from time import sleep
+
+print('Alarm will go off in 51 hours');sleep(183600)
+print('BEEP BEEP BEEP BEEP')
