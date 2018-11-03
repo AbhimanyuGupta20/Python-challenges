@@ -1,0 +1,9 @@
+#vowel count
+string=input('Input a string')
+vowelcount=0
+
+for i in string:
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+        vowelcount+=1
+        
+print(vowelcount)
