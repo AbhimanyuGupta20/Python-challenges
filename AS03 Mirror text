@@ -1,0 +1,3 @@
+joke=raw_input("Enter a string")
+joke=str(joke)
+print joke[::-1]
