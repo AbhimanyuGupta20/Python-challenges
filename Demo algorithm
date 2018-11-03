@@ -1,0 +1,26 @@
+#Create demo code to demonstrate the ideas of: sequence, selection, repetition & variable.
+
+print('This is a code to demonsrate sequence')
+
+for i in range(5):
+    print('hi')
+print('hi has been printed out repeatedely')
+print('')
+print('')
+print('This is a code to demonstrate selection ')
+input=input('Input a letter or number')
+if isinstance(input,int):
+    print('You entered a number. So this output only happens when you enter a number')
+if isinstance(input,str):
+    print('You entered a string. So this output only happens when you enter a string')
+print('')
+print('')
+print('This is an example of repetition')
+for i in range(5):
+    print('hi')
+print('hi has been printed out repeatedely')
+print('')
+print('')
+print('This is an example of variables')
+inputvar=input('Enter a number')
+print(inputvar)
