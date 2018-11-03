@@ -1,0 +1,25 @@
+#hangman
+import random
+wordlist=['hello','bye','hi','name']
+
+wordtouse=random.choice(wordlist)
+wordcheck=''
+
+chances=6
+
+print('Guess the word. You have 6 chances')
+
+while chances>0:
+    guess=raw_input('Take a guess')
+    if guess in wordtouse:
+        print('Yes!')
+        wordcheck+=guess
+        if wordcheck==wordtouse:
+            print('You win!')
+            break
+    if guess not in wordtouse:
+        print('No!')
+        chances-=1
+
+if chances==0:
+    print('You lose! Sorry')
