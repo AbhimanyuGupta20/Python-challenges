@@ -1,0 +1,16 @@
+# random guessing game
+import random
+comp=random.randint(0,100)
+player=int(input('Guess a number between 1 and 100'))
+
+while player!=comp:
+    if comp<player:
+        print('Too high! Guess again!')
+        player=int(input('Guess a number between 1 and 100 hundred'))
+    if comp>player:
+        print('Too low! Guess again!')
+        player=int(input('Guess a number between 1 and 100 hundred'))
+
+if player==comp:
+    print('yay! You guessed correctly')
+
