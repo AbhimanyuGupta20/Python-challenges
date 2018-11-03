@@ -1,0 +1,10 @@
+#ATM drain
+amount=int(input('How much is in your account'))
+amountwithdraw=int(input('How much do you want to withdraw'))
+if amount<0.5:
+    print('insufficient funds')
+
+amounttotal=amount+amountwithdraw
+amountfinal=amounttotal-0.5
+print(amountfinal)
+
