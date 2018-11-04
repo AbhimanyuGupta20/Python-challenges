@@ -1,0 +1,75 @@
+#Turn based fighting game
+
+import random
+
+player1=input('Welcome! Player 1, choose your pokemon - Charmander or Squirtle')
+player2=input('Welcome! Player 2, choose your pokemon - Charmander or Squirtle')
+
+charmanderhealth1=100
+squirtlehealth1=100
+charmanderhealth2=100
+squirtlehealth2=100
+#charmander moves are scratch, growl and block
+#squirtle moves are bash, bite and block
+
+while charmanderhealth1>0 or squirtlehealth1>0 or charmanderhealth2>0 or squirtlehealth2>0:
+    print('Let the game commence')
+    if player1=='Charmander' and player2=='Squirtle':
+        player1move=input('Player 1. What will you do. Scratch, Growl, or Block')
+        if player1move=='scratch':
+            squirtlehealth2-=random.randint(1,25)
+        if player1move=='Growl':
+            squirtlehealth2-=random.randint(1,30)
+        player2move=input('Player 2. What will you do. Bash, Bite or Block')
+        if player2move=='Bash':
+            charmanderhealth1-=random.randint(1,25)
+        if player2move=='Bite':
+            charmanderhealth1-=random.randint(1,30)
+
+
+
+    if player1=='Charmander' and player2=='Charmander':
+        player1move=input('Player 1. What will you do. Scratch, Growl, or Block')
+        if player1move=='scratch':
+            charmanderhealth2-=random.randint(1,25)
+        if player1move=='Growl':
+            charmanderhealth2-=random.randint(1,30)
+        player2move=input('Player 2. What will you do. Scratch, Growl or Block')
+        if player2move=='scratch':
+            charmanderhealth1-=random.randint(1,25)
+        if player2move=='Growl':
+            charmanderhealth1-=random.randint(1,30)
+
+
+    if player1=='Squirtle' and player2=='Charmander':
+        player1move=input('Player 1. What will you do. Bash, Bite or Block')
+        if player1move=='Bash':
+            charmanderhealth2-=random.randint(1,25)
+        if player1move=='Bite':
+            charmanderhealth2-=random.randint(1,30)
+        player2move=input('Player 2. What will you do. Scratch, Growl or Block')
+        if player2move=='scratch':
+            charmanderhealth1-=random.randint(1,25)
+        if player2move=='Growl':
+            charmanderhealth1-=random.randint(1,30)
+
+
+    if player1=='Squirtle' and player2=='Squirtle':
+        player1move=input('Player 1. What will you do. Bash, Bite or Block')
+        if player1move=='Bash':
+            charmanderhealth2-=random.randint(1,25)
+        if player1move=='Bite':
+            charmanderhealth2-=random.randint(1,30)
+        player2move=input('Player 2. What will you do. Bash, Bite or Block')
+        if player2move=='Bash':
+            charmanderhealth1-=random.randint(1,25)
+        if player2move=='Bite':
+            charmanderhealth1-=random.randint(1,30)
+
+
+
+
+
+
+
+
