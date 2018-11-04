@@ -1,0 +1,5 @@
+#Make an 8 ball
+import random
+input('Ask A yes or no question!!')
+choice=['Yes','No','Maybe','Without a doubt','Definetely']
+print(random.choice(choice))
