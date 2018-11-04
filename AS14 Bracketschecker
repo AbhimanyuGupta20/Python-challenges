@@ -1,0 +1,29 @@
+#brackets checker
+
+testcase=['(',')','[',']','{','}']
+
+regstart=0
+regend=0
+squarestart=0
+squareend=0
+curvestart=0
+curveend=0
+
+for i in testcase:
+    if i=='(':
+        regstart+=1
+    if i==')':
+        regend+=1
+    if i=='[':
+        squarestart+=1
+    if i==']':
+        squareend+=1
+    if i=='{':
+        curvestart+=1
+    if i=='}':
+        curveend+=1
+
+if regstart==regend and squarestart==squareend and curvestart==curveend:
+    print('Correct bracketing!')
+else:
+    print('Check your bracketing')
