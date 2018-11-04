@@ -1,0 +1,8 @@
+#Beginning and End
+
+list=input('Enter a list in correct format')
+newlist=[]
+
+newlist.append(list[1])
+newlist.append(list[-2])
+print(newlist)
