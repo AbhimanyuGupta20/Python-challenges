@@ -1,0 +1,12 @@
+#word game
+print('welcome!')
+letterbegin=''
+
+
+while True:
+    input=input('Enter word')
+    letterbegin=input[-1]
+    input=input('Enter word')
+    if input[0]!=letterbegin:
+        print('You lose!')
+        
