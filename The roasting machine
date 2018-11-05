@@ -1,0 +1,6 @@
+#The roast generator
+import random
+insults=['Look whos talking','The effect of that roast on me was like you purpose in life-non existent']
+insult=random.choice(insults)
+name=input('What is the name of the person you want to roast?')
+print(name,insult)
