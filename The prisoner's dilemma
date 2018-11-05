@@ -1,0 +1,18 @@
+#The prisoner's dilemma
+import random
+print('Welcome. You are prisoner A and the computer is prisoner B.')
+print('You can choose to confess or remain silent. If you both remain silent, both of you will be imprisoned for 1 year each. If you both confess, you will both be imprisoned for 5 years each. If only one of you confesses, the silent one will be jailed for 20 years. ')
+A=input('Take your pick. Will you confess or remain silent?')
+
+outcomes=['remain silent','confess']
+B=random.choice(outcomes)
+
+if A=='confess' and B=='confess':
+    print('You and prisoner B have been given a 5 year sentence!!')
+if A=='remain silent' and B=='remain silent':
+    print('You and prisoner B are imprisoned for 1 year!!')
+
+if A=='confess' and B=='remain silent':
+    print('Congratulations! You have been set free!')
+if A=='remain silent' and B=='confess':
+    print('Oh no! You have been given a 12 year sentence')
