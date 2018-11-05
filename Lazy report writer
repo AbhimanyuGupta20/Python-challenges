@@ -1,0 +1,8 @@
+#Lazy report writer
+import random
+genericcomments=['good','bad','improving','horrendous','very good','excellent']
+
+number=int(input('How many students?'))
+for i in range(number):
+    comment=random.choice(genericcomments)
+    print(comment)
