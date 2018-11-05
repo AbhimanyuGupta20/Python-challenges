@@ -1,0 +1,15 @@
+#Rovarspraket
+string='hello'
+newstring=''
+
+for letter in string:
+    if letter!='a' and letter!='e' and letter!='i' and letter!='o' and letter!='u':
+        newstring+=letter
+        newstring+='o'
+        newstring+=letter
+    if letter=='a' and letter=='e' and letter=='i' and letter=='o' and letter=='u':
+        newstring+=letter
+
+print(newstring)
+
+
