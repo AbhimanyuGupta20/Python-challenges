@@ -1,0 +1,11 @@
+#Improved security
+import random
+numberoffloors=int(input('How many floors?'))
+floorsdone=[]
+
+for i in range(numberoffloors):
+    floorgoto=random.randint(1,numberoffloors)
+    while floorgoto in floorsdone:
+        floorgoto=random.randint(1,numberoffloors)
+    floorsdone.append(floorgoto)
+    print('go to %d' % floorgoto)
