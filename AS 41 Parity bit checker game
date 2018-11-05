@@ -1,0 +1,20 @@
+#Parity bit checker game
+print('Hello. First, lets test you on an even parity. Just type in what the parity bit should be')
+evenpartityQs=['1000110','1110010','1100101','1010000']
+
+for i in evenpartityQs:
+    sumof=sum(i)
+    answer=int(input('0 or 1?'))
+    answerend=sumof+answer
+    if answerend%2==0:
+        print('yay! That was correct')
+
+print('Hello. Now, lets test you on an odd parity. Just type in what the parity bit should be')
+oddparityQs=['1010110','1010010','1000101','1010100']
+
+for i in oddparityQs:
+    sumof=sum(i)
+    answer=int(input('0 or 1?'))
+    answerend=sumof+answer
+    if answerend%2==0:
+        print('yay! That was correct')
