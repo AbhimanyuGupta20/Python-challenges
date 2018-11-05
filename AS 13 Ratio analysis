@@ -1,0 +1,12 @@
+#Ratio analysis
+print('enter data for year 1')
+grossprofit1=int(input('What was the gross profit?'))
+sales=int(input('what were the total sales?'))
+gpm1=(grossprofit1/sales)*100
+
+print('enter data for year 2')
+grossprofit2=int(input('What was the gross profit?'))
+sales2=int(input('What were the total sales?'))
+gpm2=(grossprofit2/sales2)*100
+
+print('The ratio of gpm from last year to this one is %d : %d' % (gpm1,gpm2))
