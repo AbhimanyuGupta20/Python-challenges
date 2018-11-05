@@ -1,0 +1,24 @@
+#You think you know each other?
+scoreA=0
+scoreB=0
+times=int(input('How many times do you want to play?'))
+for i in range(times):
+    Aquestion=input('Person A, what question will you ask?')
+    Aanswer=input('What is the answer to that question?')
+    
+    Bquestion=input('Person B, what question will you ask?')
+    Banswer=input('What is the answer to that question?')
+    
+    Areal=input(Bquestion)
+    if Areal==Banswer:
+        print('Very good')
+        scoreA+=1
+    
+    Breal=input(Aquestion)
+    if Breal==Aanswer:
+        print('Very good')
+        scoreB+=1
+        
+print(scoreA)
+print(scoreB)
+    
