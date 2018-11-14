@@ -1,0 +1,44 @@
+import random
+
+artist1=['song1','song2','song3','song4','song5','song6','song7','song8','song9','song10']
+artist2=['melody1','melody2','melody3','melody4','melody5','melody6','melody7','melody8','melody9','melody10']
+artist3=['composition1','composition2','composition3','composition4','composition5','composition6','composition7','composition8','composition9','composition1']
+artist4=['rap1','rap2','rap3','rap4','rap5','rap6','rap7','rap8','rap9','rap10']
+artist5=['guitar1','guitar2','guitar3','guitar4','guitar5','guitar6','guitar7','guitar8','guitar9','guitar10']
+artist6=['piano1','piano2','piano3','piano4','piano5','piano6','piano7','piano8','piano9','piano10']
+artist7=['DJ1','DJ2','DJ3','DJ4','DJ5','DJ6','DJ7','DJ8','DJ9','DJ10']
+artist8=['sad1','sad2','sad3','sad4','sad5','sad6','sad7','sad8','sad9','sad10']
+artist9=['happy1','happy2','happy3','happy4','happy5','happy6','happy7','happy8','happy9','happy10']
+artist10=['talent1','talent2','talent3','talent4','talent5','talent6','talent7','talent8','talent9','talent10']
+
+
+playlist=[]
+for i in range(10):
+    previous=0
+    songchoice=(random.choice(artist1) or random.choice(artist2) or random.choice(artist3) or random.choice(artist4) or random.choice(artist5) or random.choice(artist6) or random.choice(artist7) or random.choice(artist8) or random.choice(artist9) or random.choice(artist10))
+    while songchoice not in previous:
+        playlist.append(songchoice)
+        if songchoice in artist1:
+            previous=artist1
+        if songchoice in artist2:
+            previous=artist2
+        if songchoice in artist3:
+            previous=artist3
+        if songchoice in artist4:
+            previous=artist4
+        if songchoice in artist5:
+            previous=artist5
+        if songchoice in artist6:
+            previous=artist6
+        if songchoice in artist7:
+            previous=artist7
+        if songchoice in artist8:
+            previous=artist8
+        if songchoice in artist9:
+            previous=artist9
+        if songchoice in artist10:
+            previous=artist10
+    else:
+        songchoice=(random.choice(artist1) or random.choice(artist2) or random.choice(artist3) or random.choice(artist4) or random.choice(artist5) or random.choice(artist6) or random.choice(artist7) or random.choice(artist8) or random.choice(artist9) or random.choice(artist10))
+
+print(playlist)
