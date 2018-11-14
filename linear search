@@ -1,0 +1,8 @@
+#search
+text=input('Enter a text')
+tofind=input('Enter letter to find in this word.')
+count=0
+for i in text:
+    if i==tofind:
+        count+=1
+print(count)
