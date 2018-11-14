@@ -1,0 +1,7 @@
+#Histograms
+histolist=['1','3','6','4','2','1']
+
+
+for i in histolist:
+    i=int(i)
+    print(i *'*')
