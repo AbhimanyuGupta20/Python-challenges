@@ -1,0 +1,10 @@
+#Word length calculator
+string='Hello world. My name is Abhimanyu'
+wordlist=string.split()
+lengths=[]
+for i in wordlist:
+    lengths.append(len(i))
+
+totalsum=sum(lengths)
+average=totalsum/len(lengths)
+print('The average length of words is %d ' % (average))
