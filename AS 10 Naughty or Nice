@@ -1,0 +1,32 @@
+kidslist=['Abhimanyu','Hello','There']
+passedfirsttest=[]
+passedsecondtest=[]
+passedthirdtest=[]
+
+
+for i in kidslist:
+    numvowel=0
+    for letter in i:
+        if letter=='a' or letter=='e' or letter=='i' or letter=='o' or letter=='u':
+            numvowel+=1
+    if numvowel>=3:
+        passedfirsttest.append(i)
+
+print(passedfirsttest)
+
+
+times=0
+for i in passedfirsttest:
+    for num in range(len(i)):
+        if i[times]==i[times+1]:
+            passedsecondtest.append(i)
+print(passedsecondtest)
+
+# ab, cd, pq, or xy
+
+for i in passedsecondtest:
+    if 'ab' not in i and 'cd' not in i and 'pq' not in i and 'xy' not in i:
+        passedthirdtest.append(i)
+print(passedthirdtest)
+
+print('There are %d good kids' % (len(passedthirdtest)))
