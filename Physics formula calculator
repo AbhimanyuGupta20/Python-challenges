@@ -1,0 +1,19 @@
+#Physics formula
+formulae=['s=d/t']
+print(formulae)
+formulatouse=input('What formula do you want?')
+if formulatouse=='s=d/t':
+    variable=input('What variable do you want to find? s,d or t?')
+    if variable=='s':
+        distance=int(input('Distance'))
+        time=int(input('Time'))
+        print('The speed is %d' % (distance/time))
+    if variable=='d':
+        speed=int(input('Speed'))
+        time=int(input('Time'))
+        print('The distance is %d' % (speed*time))
+    if variable=='t':
+        speed=int(input('Speed'))
+        distance=int(input('Distance'))
+        print('The time is %d' % (distance/speed))
+
