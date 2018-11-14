@@ -1,0 +1,20 @@
+#Fallout hacking terminal
+import random
+wordstochoose=['hello','apple','dog','cat','whiteboard']
+correctword=random.choice(wordstochoose)
+chance=3
+print('You have 3 chances to select the correct word.')
+while chance>0:
+    print('Choose a word from')
+    print(wordstochoose)
+    chosenword=input('Choose!')
+    likeliness=0
+    for i in chosenword:
+        if i in correctword:
+            likeliness+=1
+    chance-=1
+    if chosenword==correctword:
+        print('You win!')
+        break
+if chance==0:
+    print('You lose!')
