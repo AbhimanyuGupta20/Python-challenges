@@ -1,0 +1,4 @@
+#List word sort
+list='Hello','World','There'
+sorted=sorted(list)
+print(sorted)
