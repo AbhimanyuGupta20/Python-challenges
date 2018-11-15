@@ -1,0 +1,13 @@
+#Neat 101 to 1000
+neatnumbers=[]
+for i in range(101,1000):
+    i=str(i)
+    splitnum=[]
+    for n in range(len(i)-1):
+        splitnum.append(n)
+    sumof=sum(splitnum)
+    i=int(i)
+    if sumof%i==0:
+        neatnumbers.append(i)
+
+print(neatnumbers)
