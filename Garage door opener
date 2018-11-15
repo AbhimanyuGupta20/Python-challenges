@@ -1,0 +1,13 @@
+#Garage door opener
+
+status='CLOSED'
+
+while True:
+    print('Door:' + status)
+    state=input('OPEN or CLOSE')
+    print('Button clicked')
+    if state=='OPEN':
+        print('Door opening')
+    if state=='CLOSED':
+        print('Door closing')
+    print('Cycle complete')
