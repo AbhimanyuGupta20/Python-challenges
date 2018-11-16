@@ -1,0 +1,10 @@
+#Moving average
+numberofyears=int(input('How many years?'))
+yearvaluelist=[]
+for i in range(numberofyears):
+    a=int(input('Enter the value for the year'))
+    yearvaluelist.append(a)
+
+sumtotal=sum(yearvaluelist)
+average=sumtotal/numberofyears
+print('The moving average is %d' % (average))
