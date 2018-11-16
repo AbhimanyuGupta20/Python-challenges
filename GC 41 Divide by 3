@@ -1,0 +1,6 @@
+#Divideby3
+num=int(input('Enter a number'))
+if num%3==0:
+    print('Number divisible by 3')
+else:
+    print('Number indivisible by 3')
