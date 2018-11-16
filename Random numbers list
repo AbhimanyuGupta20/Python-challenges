@@ -1,0 +1,10 @@
+#Random number list
+import random
+numlist=[]
+numlist.append(random.randint(1,100))
+minimum=min(numlist)
+maximum=max(numlist)
+average=(sum(numlist))/len(numlist)
+print(minimum)
+print(maximum)
+print(average)
