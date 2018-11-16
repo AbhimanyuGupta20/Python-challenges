@@ -1,0 +1,22 @@
+#   Contribution and absorption costing
+print('Lets calculate contribution first')
+
+sellprice=int(input('What is the selling price?'))
+variablecostperunit=int(input('What is the variable cost per unit?'))
+unitssold=int(input('How many units sold?'))
+
+contribution=(sellprice-variablecostperunit)*unitssold
+print('the contribution is %d' % (contribution))
+
+
+print('Now for absorption costing')
+
+perunitcosts=[]
+numofperunit=int(input('How many units?'))
+for i in range(numofperunit):
+    a=int(input('Enter per unit cost'))
+    perunitcosts.append(a)
+fixedoverhead=int(input('What is the fixed overhead?'))
+absorptioncost=(sum(perunitcosts))+(fixedoverhead/numofperunit)
+print('The absorption cost is %d' % (absorptioncost))
+
