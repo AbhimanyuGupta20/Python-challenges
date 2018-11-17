@@ -1,1 +1,5 @@
+# Max heart rate
+age=int(input('Enter your age.'))
+MHR=(70/100)*(225-age)
+print(MHR)
 
