@@ -1,0 +1,3 @@
+screenreso=int(input('Enter the resolution'))
+depth=int(input('Enter the colour depth'))
+print('The file size of the image is %d'%(screenreso*depth))
