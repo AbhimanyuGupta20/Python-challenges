@@ -1,0 +1,70 @@
+import turtle             # Allows us to use turtles
+wn = turtle.Screen()      # Creates a playground for turtles
+alex = turtle.Turtle()    # Create a turtle, assign to alex
+
+
+def starfield1():
+    alex.penup()
+    alex.setposition(34,23)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(23,54)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(56,34)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(34,23)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(35,45)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+
+def starfield2():
+    alex.penup()
+    alex.setposition(67,43)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(45,65)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(34,56)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(34,23)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+    alex.penup()
+    alex.setposition(34,45)
+    alex.pendown()
+    for i in range(5):
+        alex.forward(70)
+        alex.left(144)
+
+wn.mainloop()
