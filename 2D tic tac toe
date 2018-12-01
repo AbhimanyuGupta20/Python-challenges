@@ -1,0 +1,89 @@
+#TicTacToe2D
+tic = [['','|','','|',''],
+      ['--------------------'],
+      ['','|','','|',''],
+      ['--------------------'],
+      ['','|','','|','']]
+
+def linebylinestart():
+    n=0
+    while n<5:
+        print(tic[n])
+        n+=1
+
+
+#linebylinestart()
+print(tic[2][1])
+
+#print(T[1][2])
+print('Decide who will be player 1 and who will be player two.')
+win=False
+while True:
+    place=(input('Where will you play your piece? middle,right,left,top,bottom,top right,top left,bottom right or bottom left?'))
+    if place=='middle':
+        if tic[2][2]!='x' or 'o':
+            placehold=input('x or o')
+            tic[2][2]=placehold
+    if place=='right':
+        if tic[2][4]!='x' or 'o':
+            placehold=input('x or o')
+            tic[2][4]=placehold
+    if place=='left':
+        if tic[2][0]!='x' or 'o':
+            placehold=input('x or o')
+            tic[2][0]=placehold
+    if place=='top':
+        if tic[0][2]!='x' or 'o':
+            placehold=input('x or o')
+            tic[0][2]=placehold
+    if place=='bottom':
+        if tic[4][2]!='x' or 'o':
+            placehold=input('x or o')
+            tic[4][2]=placehold
+    if place=='top right':
+        if tic[0][4]!='x' or 'o':
+            placehold=input('x or o')
+            tic[0][4]=placehold
+    if place=='top left':
+        if tic[0][0]!='x' or 'o':
+            placehold=input('x or o')
+            tic[0][0]=placehold
+    if place=='bottom right':
+        if tic[4][4]!='x' or 'o':
+            placehold=input('x or o')
+            tic[4][4]=placehold
+    if place=='bottom left':
+        if tic[4][0]!='x' or 'o':
+            placehold=input('x or o')
+            tic[4][0]=placehold
+    nom=0
+    for i in range(5):
+        print(tic[nom])
+        nom+=1
+
+    if tic[0][0]=='x' and tic[2][0]=='x' and tic[4][0]=='x' or tic[0][0]=='o' and tic[2][0]=='o' and tic[4][0]=='o':
+        break
+
+    if tic[0][0]=='x' and tic[0][2]=='x' and tic[0][4]=='x' or tic[0][0]=='o' and tic[0][2]=='o' and tic[0][4]=='o':
+        break
+
+    if tic[0][0]=='x' and tic[0][2]=='x' and tic[0][4]=='x' or tic[0][0]=='o' and tic[0][2]=='o' and tic[0][4]=='o':
+        break
+
+    if tic[0][4]=='x' and tic[2][4]=='x' and tic[4][4]=='x' or tic[0][4]=='o' and tic[2][4]=='o' and tic[4][4]=='o':
+        break
+
+    if tic[4][0]=='x' and tic[4][2]=='x' and tic[4][4]=='x' or tic[4][0]=='o' and tic[4][2]=='o' and tic[4][4]=='o':
+        break
+
+    if tic[0][0]=='x' and tic[0][2]=='x' and tic[0][4]=='x' or tic[0][0]=='o' and tic[0][2]=='o' and tic[0][4]=='o':
+        break
+
+    if tic[0][0]=='x' and tic[2][2]=='x' and tic[4][4]=='x' or tic[0][0]=='o' and tic[2][2]=='o' and tic[4][4]=='o':
+        break
+
+    if tic[0][4]=='x' and tic[2][2]=='x' and tic[4][0]=='x' or tic[0][4]=='o' and tic[2][2]=='o' and tic[4][0]=='o':
+        break
+
+    if tic[0][2]=='x' and tic[2][2]=='x' and tic[4][2]=='x' or tic[0][2]=='o' and tic[2][2]=='o' and tic[4][2]=='o':
+        break
