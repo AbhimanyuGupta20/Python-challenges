@@ -1,0 +1,26 @@
+length=int(input('Number of columns'))
+width=int(input('Number of rows'))
+
+n=0
+twod=[]
+for i in range(width):
+    collist=[]
+    if n%2==0:
+        for i in range(length):
+            if i%2==0:
+                collist.append('.')
+            else:
+                collist.append('*')
+        twod.append(collist)
+        n+=1
+    else:
+        for i in range(length):
+            if i%2==0:
+                collist.append('*')
+            else:
+                collist.append('.')
+        twod.append(collist)
+        n+=1
+
+for i in twod:
+    print(i)
