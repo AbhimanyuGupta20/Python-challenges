@@ -1,0 +1,35 @@
+rows=int(input('How many rows?'))
+columns=int(input('How many columns?'))
+twod=[]
+
+for i in range(rows):
+    interlist=[]
+    for i in range(columns):
+        inputnum=int(input('enter an integer'))
+        interlist.append(inputnum)
+    twod.append(interlist)
+
+maximumfromrow=[]
+for i in twod:
+    maximumfromrow.append(max(i))
+
+largest=0
+for c in maximumfromrow:
+    if c>largest:
+        largest=c
+
+
+colfinal=0
+rowcount=0
+for z in twod:
+    if largest in z:
+        break
+    else:
+        rowcount+=1
+
+for z in twod:
+    for i in z:
+        if i==largest and twod.index(z)==rowcount:
+            colfinal=z.index(i)
+
+print(rowcount,colfinal)
