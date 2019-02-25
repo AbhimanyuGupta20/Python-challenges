@@ -1,2 +1,16 @@
-sortnum=[9,8,7,6,5,4,3,2,1]
-print(sorted(sortnum))
+sortnum=[9,8,7,6,5,4,3,2]
+
+compare=sorted(sortnum)
+
+
+while sortnum!=compare:
+    n=0
+    while n<len(sortnum)-1:
+        if sortnum[n]>sortnum[n+1]:
+            a=sortnum[n]
+            b=sortnum[n+1]
+            sortnum[n]=b
+            sortnum[n+1]=a
+        n+=1
+    print(sortnum)
+print(sortnum)
