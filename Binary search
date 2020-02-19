@@ -1,0 +1,19 @@
+counter=0
+guess=int(input('Which number between 1 and 100 do you want the computer to guess?'))
+i=0
+j=100
+found=False
+while found==False:
+    compguess=(i+j)/2
+    if compguess==guess:
+        counter+=1
+        found=True
+    elif compguess>guess:
+        counter+=1
+        j=compguess
+    elif compguess<guess:
+        counter+=1
+        i=compguess
+
+print(counter)
+print(compguess)
